@@ -1,0 +1,50 @@
+{
+  "name": "processing-b-b-types",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/processing/b/b-types/src",
+  "prefix": "nx-showcase",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/processing/b/b-types/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/processing/b/b-types/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/processing/b/b-types/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/processing/b/b-types/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/processing/b/b-types/**/*.ts",
+          "libs/processing/b/b-types/**/*.html"
+        ]
+      }
+    }
+  }
+}

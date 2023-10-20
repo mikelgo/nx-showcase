@@ -1,0 +1,124 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-showcase/admin/admin-manager/admin-manager-data-access": [
+        "libs/admin/admin-manager/admin-manager-data-access/src/index.ts"
+      ],
+      "@nx-showcase/admin/admin-manager/admin-manager-feat": [
+        "libs/admin/admin-manager/admin-manager-feat/src/index.ts"
+      ],
+      "@nx-showcase/admin/admin-manager/admin-manager-types": [
+        "libs/admin/admin-manager/admin-manager-types/src/index.ts"
+      ],
+      "@nx-showcase/admin/admin-manager/admin-manager-ui": [
+        "libs/admin/admin-manager/admin-manager-ui/src/index.ts"
+      ],
+      "@nx-showcase/admin/admin-shared": [
+        "libs/admin/admin-shared/src/index.ts"
+      ],
+      "@nx-showcase/admin/shell-admin": ["libs/admin/shell-admin/src/index.ts"],
+      "@nx-showcase/admin/viewer/viewer-data-access": [
+        "libs/admin/viewer/viewer-data-access/src/index.ts"
+      ],
+      "@nx-showcase/admin/viewer/viewer-feat": [
+        "libs/admin/viewer/viewer-feat/src/index.ts"
+      ],
+      "@nx-showcase/admin/viewer/viewer-types": [
+        "libs/admin/viewer/viewer-types/src/index.ts"
+      ],
+      "@nx-showcase/admin/viewer/viewer-ui": [
+        "libs/admin/viewer/viewer-ui/src/index.ts"
+      ],
+      "@nx-showcase/admin/viewer/viewer-util": [
+        "libs/admin/viewer/viewer-util/src/index.ts"
+      ],
+      "@nx-showcase/booking/payment/payment-data-access": [
+        "libs/booking/payment/payment-data-access/src/index.ts"
+      ],
+      "@nx-showcase/booking/payment/payment-feat": [
+        "libs/booking/payment/payment-feat/src/index.ts"
+      ],
+      "@nx-showcase/booking/payment/payment-types": [
+        "libs/booking/payment/payment-types/src/index.ts"
+      ],
+      "@nx-showcase/booking/payment/payment-ui": [
+        "libs/booking/payment/payment-ui/src/index.ts"
+      ],
+      "@nx-showcase/booking/payment/payment-util": [
+        "libs/booking/payment/payment-util/src/index.ts"
+      ],
+      "@nx-showcase/booking/purchasing/purchasing-data-access": [
+        "libs/booking/purchasing/purchasing-data-access/src/index.ts"
+      ],
+      "@nx-showcase/booking/purchasing/purchasing-feat": [
+        "libs/booking/purchasing/purchasing-feat/src/index.ts"
+      ],
+      "@nx-showcase/booking/purchasing/purchasing-types": [
+        "libs/booking/purchasing/purchasing-types/src/index.ts"
+      ],
+      "@nx-showcase/booking/purchasing/purchasing-ui": [
+        "libs/booking/purchasing/purchasing-ui/src/index.ts"
+      ],
+      "@nx-showcase/booking/purchasing/purchasing-util": [
+        "libs/booking/purchasing/purchasing-util/src/index.ts"
+      ],
+      "@nx-showcase/booking/shell-booking": [
+        "libs/booking/shell-booking/src/index.ts"
+      ],
+      "@nx-showcase/processing/a/a-data-access": [
+        "libs/processing/a/a-data-access/src/index.ts"
+      ],
+      "@nx-showcase/processing/a/a-feat": [
+        "libs/processing/a/a-feat/src/index.ts"
+      ],
+      "@nx-showcase/processing/a/a-types": [
+        "libs/processing/a/a-types/src/index.ts"
+      ],
+      "@nx-showcase/processing/b/b-feat": [
+        "libs/processing/b/b-feat/src/index.ts"
+      ],
+      "@nx-showcase/processing/b/b-types": [
+        "libs/processing/b/b-types/src/index.ts"
+      ],
+      "@nx-showcase/processing/b/b-ui": ["libs/processing/b/b-ui/src/index.ts"],
+      "@nx-showcase/processing/c/c-data-access": [
+        "libs/processing/c/c-data-access/src/index.ts"
+      ],
+      "@nx-showcase/processing/c/c-feat": [
+        "libs/processing/c/c-feat/src/index.ts"
+      ],
+      "@nx-showcase/processing/c/c-types": [
+        "libs/processing/c/c-types/src/index.ts"
+      ],
+      "@nx-showcase/processing/c/c-ui": ["libs/processing/c/c-ui/src/index.ts"],
+      "@nx-showcase/processing/d/d-data-access": [
+        "libs/processing/d/d-data-access/src/index.ts"
+      ],
+      "@nx-showcase/processing/d/d-feat": [
+        "libs/processing/d/d-feat/src/index.ts"
+      ],
+      "@nx-showcase/processing/d/d-types": [
+        "libs/processing/d/d-types/src/index.ts"
+      ],
+      "@nx-showcase/processing/d/d-ui": ["libs/processing/d/d-ui/src/index.ts"],
+      "@nx-showcase/processing/shell-processing": [
+        "libs/processing/shell-processing/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

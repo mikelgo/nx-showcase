@@ -1,0 +1,50 @@
+{
+  "name": "booking-payment-payment-util",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/booking/payment/payment-util/src",
+  "prefix": "nx-showcase",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/booking/payment/payment-util/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/booking/payment/payment-util/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/booking/payment/payment-util/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/booking/payment/payment-util/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/booking/payment/payment-util/**/*.ts",
+          "libs/booking/payment/payment-util/**/*.html"
+        ]
+      }
+    }
+  }
+}

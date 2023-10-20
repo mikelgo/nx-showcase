@@ -1,0 +1,50 @@
+{
+  "name": "booking-purchasing-purchasing-types",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/booking/purchasing/purchasing-types/src",
+  "prefix": "nx-showcase",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/booking/purchasing/purchasing-types/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/booking/purchasing/purchasing-types/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/booking/purchasing/purchasing-types/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/booking/purchasing/purchasing-types/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/booking/purchasing/purchasing-types/**/*.ts",
+          "libs/booking/purchasing/purchasing-types/**/*.html"
+        ]
+      }
+    }
+  }
+}
