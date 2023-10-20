@@ -13,8 +13,28 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "shell",
+                "onlyDependOnLibsWithTags": ["feat","ui", "types", "util"]
+              },
+              {
+                "sourceTag": "feat",
+                "onlyDependOnLibsWithTags": ["feat","ui", "types", "util"]
+              },
+              {
+                "sourceTag": "ui",
+                "onlyDependOnLibsWithTags": ["ui", "types", "util"]
+              },
+              {
+                "sourceTag": "types",
+                "onlyDependOnLibsWithTags": ["types"]
+              },
+              {
+                "sourceTag": "data-access",
+                "onlyDependOnLibsWithTags": ["types", "util", "data-access"]
+              },
+              {
+                "sourceTag": "util",
+                "onlyDependOnLibsWithTags": ["util","types"]
               }
             ]
           }

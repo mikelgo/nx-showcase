@@ -117,7 +117,8 @@
       "@nx-showcase/processing/d/d-ui": ["libs/processing/d/d-ui/src/index.ts"],
       "@nx-showcase/processing/shell-processing": [
         "libs/processing/shell-processing/src/index.ts"
-      ]
+      ],
+      "@nx-showcase/shared": ["libs/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
